@@ -1,0 +1,95 @@
+/* medium screen */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .container{
+        max-width: 720px;
+    }
+    /*start of the heading */  
+
+    .navbar ul li {
+        display: block;
+      }
+      
+    .navbar .button-nav button{
+        display: inline-block;
+    }
+
+    .tourz-search-form {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .tourz-search-form .Enter-city {
+      grid-row-start: 1;
+      grid-row-end: 1;
+      grid-column-start: 1;
+      grid-column-end: 7;
+      border-radius: 10px;
+      /* width: 100%; */
+    }
+    .tourz-search-form .Enter-city input{
+      width: 100%;
+    }
+    .tourz-search-form .serch-over-all {
+      /* grid-area: auto / span 4; */
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 7;
+    }
+    .tourz-search-form .search-btn {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 7;
+    }
+    .tourz-search-form .search-btn button{
+      width: 100%;
+    }
+
+    /* End of the heading */
+  
+    /* Start of search table */
+  
+    /* End of search table */
+  
+  
+    /* Start of avaiable packeages */
+  
+  .avail-package .packages{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(340px,1fr));
+    gap: 10px;
+    row-gap: 20px;
+  }
+
+  .avail-package .packages .package{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  /* End of available packages */
+  
+
+
+  /* footer */
+
+  .first-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  
+  .first-section .vacations ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .first-section .vacations ul li{
+    width: 30%;
+  }
+
+  /* End footer */
+  }
